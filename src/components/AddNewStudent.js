@@ -55,17 +55,17 @@ class AddNewStudent extends Component {
 
   render() {
     return (
-      <div>
+      <div id="addStudentArea">
         <DialogTitle>Add New Student</DialogTitle>
         <DialogContent style={{paddingTop: 20}} >
-          <TextField autoFocus label="Email" onChange={this.emailHandler} style={{width: 400}} />
+          <TextField autoFocus id="email" label="Email" onChange={this.emailHandler} style={{width: 400}} />
           <br></br>
-          <TextField label="Name" onChange={this.nameHandler} style={{width: 400, margin: 10}} />
+          <TextField id="name" label="Name" onChange={this.nameHandler} style={{width: 400, margin: 10}} />
         </DialogContent>
         <DialogActions sx={{display: "flex", justifyContent: "center"}}>
-            <Button color="primary" onClick={this.doneHandler}>Add</Button>
+            <Button id="addButton" color="primary" onClick={this.doneHandler}>Add</Button>
         </DialogActions>
-        <p style={{color: this.state.flag ? "green":"red"}}>{this.state.message}</p>
+        <p id="message" style={{color: this.state.flag ? "green":"red"}}>{this.state.message}</p>
       </div>
     ); 
   };

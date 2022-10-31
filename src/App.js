@@ -18,7 +18,7 @@ function App() {
             Course Registration
            </Typography>
             <Button component={Link} to="/">Home</Button> 
-            <Button component={Link} to="/addstudent">Add Student</Button>
+            <Button id="addStudent" component={Link} to="/addstudent">Add Student</Button>
         </Toolbar>
       </AppBar>
        <Switch>
